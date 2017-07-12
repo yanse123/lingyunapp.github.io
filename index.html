@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>陕西凌云网络</title>
+		<link type="text/css" rel="stylesheet" href="CSS/demo.css" />
+		<link type="text/css" rel="stylesheet" href="CSS/jquery.mmenu.all.css" />
+		<link rel="stylesheet" href="CSS/index.css">
+		<link rel="stylesheet" href="CSS/slick.css">
+		<link rel="stylesheet" href="CSS/zepto.fullpage.css">
+		<!-- for the fixed header -->
+		<style type="text/css">
+			#header,
+			#footer
+			{
+				position: fixed;
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				-o-box-sizing: border-box;
+				box-sizing: border-box;
+				z-index:999;
+			}
+		</style>
+		<script src="js/jquery-1.12.1.js"></script>
+		<script src="js/js.fullpage.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+		<script src="js/slick.js"></script>
+		<script src="js/index.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $menu = $('nav#menu'),
+					$html = $('html, body');
+				$menu.mmenu();
+				$menu.find( 'li > a' ).on(
+					'click',
+					function()
+					{
+						var href = $(this).attr( 'href' );
+
+						//	if the clicked link is linked to an anchor, scroll the page to that anchor
+						if ( href.slice( 0, 1 ) == '#' )
+						{
+							$menu.one(
+								'closed.mm',
+								function()
+								{
+									setTimeout(
+										function()
+										{
+											$html.animate({
+												scrollTop: $( href ).offset().top
+											});
+										}, 10
+									);
+								}
+							);
+						}
+					}
+				);
+			});
+		</script>
+		<style>
+			.wp{
+				position: absolute;
+				left:0;
+				top:0;
+				right:0;
+				bottom:0;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header" class="mm-fixed-top">
+				<a href="#menu"></a>
+				凌云网络
+			</div>
+			<div id="content">
+				<div class="wp">
+					<div class="wp-inner">
+						<div class="page page1" >
+							<div id="intro">
+								<img src="images/first@2x.png" alt="">
+								<div class="welcome">
+									<a href="#first" id='firstA'></a>
+								</div>
+							</div>
+						</div>
+						<div class="page page2" >
+							<div id="first" class="bnbox">
+								<div class=" bn bacImg">
+									<div class="consult">
+										<div class="consultTitle">内容1</div>
+										<div class="consultTimes">2017-04-10</div>
+										<div class="consultText">内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1</div>
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThing</div>-->
+										<div class="consultImg">
+											<img src="images/Bitmap@2x.png" alt="">
+										</div>
+										<div class="consultText">内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1内容1</div>
+			</div>
+								</div>
+								<div class="bacImg2 bn" style="display: none;">
+									<div class="consult">
+										<div class="consultTitle">内容2</div>
+										<div class="consultTimes">2017-04-20</div>
+										<div class="consultText">内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2</div>
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<!--<div class="consultText">TypeSomeThingTypeSomeThingTypeSomeThing</div>-->
+										<div class="consultImg">
+											<img src="images/Bitmap@2x.png" alt="">
+										</div>
+										<div class="consultText">内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2</div>
+										<div class="consultText">内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2内容2</div>
+									</div>
+
+								</div>
+								<div class="bacImg3 bn" style="display: none;">
+									<div class="consult">
+										<div class="consultTitle">内容3</div>
+										<div class="consultTimes">2017-05-30</div>
+										<div class="consultText">内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3</div>
+
+										<div class="consultImg">
+											<img src="images/Bitmap@2x.png" alt="">
+										</div>
+										<div class="consultText">内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3内容3</div>
+
+									</div>
+								</div>
+								<div class="LeagueBuilding">
+									<div class="itemBox btbox">
+										<div class="item bt">
+											<img src="images/Bitmap@2x.png" alt="">
+											<p class="maskLayer">商品1</p>
+										</div>
+										<div class="item bt">
+											<img src="images/Bitmap@2x.png" alt="">
+											<p class="maskLayer">商品2</p>
+										</div>
+										<div class="item bt">
+											<img src="images/Bitmap@2x.png" alt="">
+											<p class="maskLayer">商品3</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page page3">
+							<div id="second">
+								<div class="yinTop"></div>
+								<div class="yinBot"></div>
+								<div class="slickBox">
+									<div class="slick">
+										<div><a href="javascript:;">
+											<img src="images/Bitmap@2x.png" alt="">
+										     <span class="shaNow">商品详情页1
+											        <ul>
+											            <li>内容内容内容内容内容</li>
+
+													</ul>
+											 </span>
+											<span class="yinY"><img src="images/Rectangle%206@2x.png" alt=""></span>
+										</a></div>
+										<div><a href="javascript:;"><img src="images/Bitmap@2x.png" alt="">
+											 <span class="shaNow">商品详情页2
+											        <ul>
+											            <li>内容内容内容内容内容</li>
+
+													</ul>
+											 </span>
+											<span class="yinY"><img src="images/Rectangle%206@2x.png" alt=""></span>
+										</a></div>
+										<div><a href="javascript:;"><img src="images/Bitmap@2x.png" alt="">
+											 <span class="shaNow">商品详情页3
+											        <ul>
+											            <li>内容内容内容内容内容</li>
+
+													</ul>
+											 </span>
+											<span class="yinY"><img src="images/Rectangle%206@2x.png" alt=""></span>
+										</a></div>
+										<div><a href="javascript:;"><img src="images/Bitmap@2x.png" alt="">
+											 <span class="shaNow">商品详情页4
+											        <ul>
+											            <li>内容内容内容内容内容</li>
+
+													</ul>
+											 </span>
+											<span class="yinY"><img src="images/Rectangle%206@2x.png" alt=""></span>
+										</a></div>
+										<div><a href="javascript:;"><img src="images/Bitmap@2x.png" alt="">
+											 <span class="shaNow">商品详情页5
+											        <ul>
+											            <li>内容内容内容内容内容</li>
+
+													</ul>
+											 </span>
+											<span class="yinY"><img src="images/Rectangle%206@2x.png" alt=""></span>
+										</a></div>
+									</div>
+								</div>
+								<div class="experience">
+									<img src="images/立即体验@2x.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="page page4" >
+							<div id="third">
+								<div class="team"><strong>TEAM</strong></div>
+								<div class="container">
+									<div id="slide" class="slide" class="index-slide" alt="star">
+										<!-- 轮播图片数量可自行增减 -->
+										<div class="img"><img src="images/Bitmap.png"/></div>
+										<div class="img"><img src="images/Bitmap1.png"/></div>
+										<div class="img"><img src="images/fullpixels.png"/></div>
+									</div>
+								</div>
+								<div class="partner">
+									<div class="partnerTitle"><strong>PARTNER</strong></div>
+									<div class="partnerImg"><img src="images/Rectangle%203@2x.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="page page5" >
+							<div id="four">
+								<div class="joinUs">
+									<div class="joinUsTitle"><strong>CONTACT</strong></div>
+									<div class="contactWay">
+										<div class="emailWay">
+											<div class="rectangle">
+												15280124652@163.com
+											</div>
+											<div class="email">
+												<img src="images/email.png" alt="">
+											</div>
+										</div>
+										<div class="telPhoneWay">
+											<div class="rectangle">
+												029-6266 1000
+											</div>
+											<div class="telPhone">
+												<img src="images/telphone.png" alt="">
+											</div>
+										</div>
+										<div class="addressWay">
+											<div class="rectangle">
+												029-6266 1000
+											</div>
+											<div class="address">
+												<img src="images/address.png" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="joinUsBut">
+										<div class="joinUsButImg">
+											<img src="images/Group@2x.png" alt="">
+										</div>
+									</div>
+									<div class="luckyKing">陕西凌云网络&nbsp&nbspvv.cc</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--滑入侧导航-->
+			<nav id="menu">
+						<ul>
+							<li><a href="#intro" id="intros">Home</a></li>
+							<li><a href="#first" id="firsts">Project</a></li>
+							<li><a href="#second" id="seconds">Team</a></li>
+							<li><a href="#third" id="thirds">Partner</a></li>
+							<li><a href="#four" id="fours">Contact</a></li>
+						</ul>
+			</nav>
+		</div>
+	</body>
+</html>
+<script>
+    var fullpage = document.getElementsByClassName('wp-inner')[0].fullpage();
+    document.getElementById("intros").onclick = function(e){
+        e.preventDefault();
+        fullpage.moveTo(0,1);
+    };
+    document.getElementById("firstA").onclick = function(e){
+        e.preventDefault();
+        fullpage.moveTo(1,1);
+    };
+    document.getElementById("firsts").onclick = function(e){
+        e.preventDefault();
+        fullpage.moveTo(1,1);
+    };
+    document.getElementById("seconds").onclick = function(e){
+        e.preventDefault();
+        fullpage.moveTo(2,1);
+    };
+    document.getElementById("thirds").onclick = function(e){
+        e.preventDefault();
+        fullpage.moveTo(3,1);
+    };
+    document.getElementById("fours").onclick = function(e){
+        e.preventDefault();
+        fullpage.moveTo(4,1);
+    };
+</script>
